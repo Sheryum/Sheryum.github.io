@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+    font-size: 150%;
+}
+
+h1,
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menuhead {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 40%;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+}
+
+.card {
+    width: 31.66%;
+    border: 2px solid black;
+    float: left;
+    margin-right: 2.5%;
+    position: relative;
+    background-color: #999999;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.cardhead {
+    width: 43%;
+    position: absolute;
+    right: 0;
+    border: 2px solid black;
+    border-top: 0;
+    border-right: 0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.op1 {
+    background-color: #D59898;
+}
+
+.op2 {
+    background-color: #C14543;
+    color: white;
+}
+
+.op3 {
+    background-color: #D59898;
+}
+
+p {
+    padding-top: 45px;
+    padding-bottom: 4%;
+    padding-right: 4%;
+    padding-left: 4%;
+    text-align: left;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .md-1-6,
+    .md-2-6 {
+        width: 47.5%;
+        margin-right: 5%;
+    }
+    .md-2-6 {
+        margin-right: 0;
+    }
+    .md-3-12 {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .menuhead {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .sm-1-12,
+    .sm-2-12,
+    .sm-3-12 {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 3%;
+    }
+    .menuhead {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
